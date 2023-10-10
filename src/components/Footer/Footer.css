@@ -1,0 +1,35 @@
+footer {
+  background-color: var(--black);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-size: .95rem;
+}
+
+.rrss-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.rrss-links a {
+  color: white;
+  border: solid 2px white;
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  transition: .3s ease;
+}
+
+.rrss-links a:hover {
+  background-color: white;
+  color: var(--black);
+}

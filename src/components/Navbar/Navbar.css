@@ -1,0 +1,64 @@
+nav {
+  background-color: var(--black);
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav .brand img {
+  height: 2rem;
+}
+
+nav .cart-link {
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+nav .cart-link::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  background-color: var(--red);
+  border-radius: 10px 10px 0 0;
+  transition: height .3s ease;
+}
+
+nav .cart-link:hover::before {
+  height: 3.5px;
+}
+
+nav .cart-link.active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5px;
+  background-color: var(--red);
+  border-radius: 10px 10px 0 0;
+}
+
+nav .badge {
+  background-color: var(--red);
+  color: white;
+  padding: 0 .55rem;
+  border-radius: 100px;
+  margin-left: .55rem;
+}
+
+nav .right-side {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+}
